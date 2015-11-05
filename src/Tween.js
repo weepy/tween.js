@@ -130,6 +130,12 @@ TWEEN.Tween = function (object) {
 
 	};
 
+    this.setDuration = function( duration ) {
+    	
+        _duration = duration;
+    };
+
+
 	this.start = function (time) {
 
 		TWEEN.add(this);
@@ -265,6 +271,7 @@ TWEEN.Tween = function (object) {
 		return this;
 
 	};
+
 
 	this.update = function (time) {
 
